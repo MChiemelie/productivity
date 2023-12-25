@@ -1,0 +1,42 @@
+{
+  "manifest_version": 3,
+  "name": "Productivity",
+  "description": "This extension helps you organise your activities in an order urgency and importance.",
+  "version": "1.0.1",
+  "icons": {
+    "16": "assets/icon.png",
+    "32": "assets/icon.png",
+    "48": "assets/icon.png",
+    "128": "assets/icon.png"
+  },
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon.png",
+      "32": "assets/icon.png",
+      "48": "assets/icon.png",
+      "128": "assets/icon.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "desktopCapture",
+    "storage",
+    "identity",
+    "webNavigation",
+    "offscreen"
+  ],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Productivity</title>
+  </head>
+
+  <body>
+    <article>
+      <header>
+        <h1>Productivity</h1>
+        <p>Boost your daily productivity by organizing your daily tasks in an order of importance and urgency.</p>
+      </header>
+
+      <section>
+        <table>
+            <tr>
+              <th colspan="2" rowspan="2"></th>
+              <th colspan="2" class="main">IMPORTANCE</th>
+            </tr>
+            <tr>
+              <th class="sub">Important</th>
+              <th class="sub">Not Important</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="2" class="urgency main">URGENCE</th>
+              <th class="urgency sub">Urgent</th>
+              <td>
+                <form onsubmit="">
+                  <input type="text" name="task" id="taskInput"></input>
+                  <button type="submit" id="add">Add</button>
+                </form>
+                <ul></ul>
+              </td>
+              <td>
+                <form onsubmit="">
+                  <input type="text" name="task" id="taskInput"></input>
+                  <button type="submit" id="add">Add</button>
+                </form>
+                <ul></ul>
+              </td>
+            </tr>
+            <tr>
+              <th class="urgency sub">Not Urgent</th>
+              <td>
+                <form onsubmit="">
+                  <input type="text" name="task" id="taskInput"></input>
+                  <button type="submit" id="add">Add</button>
+                </form>
+                <ul></ul>
+              </td>
+              <td>
+                <form onsubmit="">
+                  <input type="text" name="task" id="taskInput"></input>
+                  <button type="submit" id="add">Add</button>
+                </form>
+                <ul></ul>
+              </td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <!-- You can add footer content here if needed -->
+          </tfoot>
+        </table>
+      </section>
+    </article>
+  </body>
+</html>

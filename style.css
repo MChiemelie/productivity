@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   text-align: center;
+   box-sizing: border-box;
+   font-family: 'Rethink Sans', sans-serif;
+}
+
+body{
+   width: 600px;
+   height: 600px;
+}
+
+table {
+   border: 1px solid black;
+   width: 98vw;
+   margin: auto;
+}
+
+li, form {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-between;
+   margin: .5rem;
+}
+
+.urgency {
+   writing-mode: vertical-rl;
+   transform: rotate(180deg);
+   width: 5%;
+}
+
+th {
+   width: fit-content;
+   height: 10%;
+}
+
+td {
+   width: 50px;
+   padding: 2rem;
+}
+
+.main {
+   font-size: 2rem;
+   background-color: salmon;
+}
+
+input {
+   height: 1.5rem;
+   width: 70%;
+}
+
+button {
+   padding: .3rem;
+   border: none;
+   border-radius: .15rem;
+   background: rgb(38, 38, 192);
+   width: 25%;
+   color: white;
+}
+
+#remove {
+   background: #111010;
+}
+
+h1 {
+   text-align: center;
+   padding: .1rem;
+}
+
+p {
+   width: 80%;
+   margin: auto;
+   padding: 1rem;
+}
