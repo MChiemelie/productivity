@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Productivity",
   "description": "This extension helps you organise your activities in an order urgency and importance.",
-  "version": "1.0.1",
+  "version": "0.0.1",
   "icons": {
     "16": "assets/icon.png",
     "32": "assets/icon.png",
